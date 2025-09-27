@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face-Recognition</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">IPR-134</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home" class="landing-page">
+        <div class="landing-content">
+            <h1>Welcome!,</h1>
+            <p>Face-Recognition system to recognize the the users face and display the details of that person</p>
+            <button class="explore-btn">Explore More</button>
+        </div>
+    </section>
+    
+    <section id="camera">
+        <h2>Capture Your Image</h2>
+        <div class="camera-box">
+            <video id="video" width="640" height="480" autoplay></video>
+            <button id="capture">Capture</button>
+            <canvas id="canvas" width="640" height="480"></canvas>
+        </div>
+        <div id="photos" class="photo-container"></div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

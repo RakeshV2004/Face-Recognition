@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff6347;
+}
+
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.landing-content h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.landing-content p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.explore-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #ff6347;
+    background: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.explore-btn:hover {
+    background: #ff6347;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#camera {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.camera-box {
+    position: relative;
+}
+
+#video {
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+#capture {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#capture:hover {
+    background: #ff6347;
+}
+
+#canvas {
+    display: none;
+    margin-top: 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.photo-container img {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        justify-content: center;
+    }
+
+    .nav-links li {
+        margin-left: 5px;
+    }
+
+    .landing-content h1 {
+        font-size: 28px;
+    }
+
+    .landing-content p {
+        font-size: 16px;
+    }
+
+    .explore-btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .camera-box {
+        padding: 5px;
+        width: auto;
+        height: auto;
+    }
+
+    #capture {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .photo-container img {
+        width: 60px;
+        margin: 3px;
+    }
+}
